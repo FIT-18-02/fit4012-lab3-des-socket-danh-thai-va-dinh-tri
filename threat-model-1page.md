@@ -2,7 +2,7 @@
 
 ## Thông tin nhóm
 - Thành viên 1: Phạm Danh Thái
-- Thành viên 2: Nguyễn Đình Trí
+- Thành viên 2: Nguyễn Đình Tr
 
 ## Assets
 TODO_STUDENT: Liệt kê tài sản cần bảo vệ.
