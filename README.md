@@ -16,10 +16,11 @@ Bài lab bám theo luồng hệ thống trong file hướng dẫn: Sender tạo 
 - **Thành viên 2**: Nguyễn Đình Trí - MSSV: 1871020580
 
 ## Task division
-- **Thành viên 1 phụ trách chính**: Sender (mã hóa DES-CBC, tạo packet, gửi dữ liệu qua socket, log phía gửi)
-- **Thành viên 2 phụ trách chính**: Receiver (nhận dữ liệu, parse header, giải mã DES-CBC, xử lý lỗi và ghi log)
-- **Phần làm chung**: Thiết kế cấu trúc gói tin, viết test case, xây dựng threat model và hoàn thiện README
+Thành viên 1 phụ trách chính (Phạm Danh Thái): Thiết kế và cài đặt luồng Sender. Chịu trách nhiệm tạo mã hóa DES-CBC, tạo gói tin (packet structure), thực hiện gửi dữ liệu qua TCP Socket và quản lý log phía người gửi.
 
+Thành viên 2 phụ trách chính (Nguyễn Đình Trí): Thiết kế và cài đặt luồng Receiver. Chịu trách nhiệm lắng nghe kết nối, parse header độ dài, thực hiện giải mã DES-CBC, xử lý các ngoại lệ và ghi log phía người nhận.
+
+Phần làm chung: Thống nhất giao thức truyền tin (Key + IV + Length + Ciphertext), xây dựng bộ mã nguồn tiện ích des_socket_utils.py, viết các kịch bản kiểm thử (Tests), xây dựng Threat Model và hoàn thiện tài liệu báo cáo.
 ## Demo roles
 - **Bạn nào demo Sender / gói tin / log gửi**: TODO_DEMO_ROLE_1
 - **Bạn nào demo Receiver / giải mã / log nhận**: TODO_DEMO_ROLE_2
