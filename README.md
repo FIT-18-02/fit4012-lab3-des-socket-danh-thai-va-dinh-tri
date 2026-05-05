@@ -16,9 +16,9 @@ Bài lab bám theo luồng hệ thống trong file hướng dẫn: Sender tạo 
 - **Thành viên 2**: Nguyễn Đình Trí - MSSV: 1871020580
 
 ## Task division
-- **Thành viên 1 phụ trách chính**: Phạm Danh Thái
-- **Thành viên 2 phụ trách chính**: Nguyễn Đình Trí
-- **Phần làm chung**: abc
+- **Thành viên 1 phụ trách chính**: Sender (mã hóa DES-CBC, tạo packet, gửi dữ liệu qua socket, log phía gửi)
+- **Thành viên 2 phụ trách chính**: Receiver (nhận dữ liệu, parse header, giải mã DES-CBC, xử lý lỗi và ghi log)
+- **Phần làm chung**: Thiết kế cấu trúc gói tin, viết test case, xây dựng threat model và hoàn thiện README
 
 ## Demo roles
 - **Bạn nào demo Sender / gói tin / log gửi**: TODO_DEMO_ROLE_1
