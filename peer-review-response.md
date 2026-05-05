@@ -1,8 +1,8 @@
 # Peer Review Response
 
 ## Thông tin nhóm
-- Thành viên 1: TODO_STUDENT
-- Thành viên 2: TODO_STUDENT
+- Thành viên 1: Phạm Danh Thái
+- Thành viên 2: Nguyễn Đình Trí
 
 ## Thành viên 1 góp ý cho thành viên 2
 TODO_STUDENT: Góp ý ngắn gọn về phần việc, chất lượng code, test, hoặc tài liệu.
