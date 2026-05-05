@@ -18,7 +18,7 @@ Bài lab bám theo luồng hệ thống trong file hướng dẫn: Sender tạo 
 ## Task division
 - **Thành viên 1 phụ trách chính**: Phạm Danh Thái
 - **Thành viên 2 phụ trách chính**: Nguyễn Đình Trí
-- **Phần làm chung**: TODO_SHARED_WORK
+- **Phần làm chung**: abc
 
 ## Demo roles
 - **Bạn nào demo Sender / gói tin / log gửi**: TODO_DEMO_ROLE_1
