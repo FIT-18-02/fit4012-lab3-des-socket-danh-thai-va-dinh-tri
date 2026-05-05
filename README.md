@@ -16,8 +16,8 @@ Bài lab bám theo luồng hệ thống trong file hướng dẫn: Sender tạo 
 - **Thành viên 2**: Nguyễn Đình Trí - MSSV: 1871020580
 
 ## Task division
-- **Thành viên 1 phụ trách chính**: TODO_ROLE_MEMBER_1
-- **Thành viên 2 phụ trách chính**: TODO_ROLE_MEMBER_2
+- **Thành viên 1 phụ trách chính**: Phạm Danh Thái
+- **Thành viên 2 phụ trách chính**: Nguyễn Đình Trí
 - **Phần làm chung**: TODO_SHARED_WORK
 
 ## Demo roles
