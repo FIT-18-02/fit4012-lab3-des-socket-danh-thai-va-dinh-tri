@@ -13,7 +13,7 @@ Bài lab bám theo luồng hệ thống trong file hướng dẫn: Sender tạo 
 
 ## Team members
 - **Thành viên 1**: Phạm Danh Thái - MSSV: 1871020523
-- **Thành viên 2**: TODO_MEMBER_2 - MSSV: 1871020580
+- **Thành viên 2**: Nguyễn Đình Trí - MSSV: 1871020580
 
 ## Task division
 - **Thành viên 1 phụ trách chính**: TODO_ROLE_MEMBER_1
