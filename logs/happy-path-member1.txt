@@ -1,4 +1,3 @@
-
 [+] Đã gửi bản mã. 
 Key: b070cccea1301abb
 IV: e4e326b780e5f70e
