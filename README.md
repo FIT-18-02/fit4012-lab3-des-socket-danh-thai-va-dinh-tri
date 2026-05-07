@@ -13,7 +13,7 @@ Bài lab bám theo luồng hệ thống trong file hướng dẫn: Sender tạo 
 - Khi demo, giảng viên có thể hỏi chéo bất kỳ thành viên nào về **sender**, **receiver**, **DES-CBC**, **padding**, **threat model** và **ethics**.
 
 ## Team members
-- **Thành viên 1**: Phạm Danh Thái - MSSV: 1871020214
+- **Thành viên 1**: Phạm Danh Thái - MSSV: 1871020523
 - **Thành viên 2**: Nguyễn Đình Trí - MSSV: 1871020191
 ## Task division
 - Thành viên 1 phụ trách chính: Logic mã hóa (des_socket_utils.py), chương trình gửi tin (sender.py) và phân tích rủi ro (threat-model-1page.md).
@@ -54,6 +54,7 @@ pip install -r requirements.txt
 ```bash
 python receiver.py
 ```
+
 
 ### 3) Chạy Sender
 ```bash
