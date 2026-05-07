@@ -1,6 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/jjUQ5jLa)
 # FIT4012 - Lab 3 - Hệ thống gửi và nhận dữ liệu mã hoá DES qua Socket
 
+
 Chào mừng bạn đến với một chiếc lab nhìn thì hiền nhưng rất biết cách “hỏi xoáy đáp xoay”. Ở lab này, bạn sẽ làm một hệ thống nhỏ gồm **Sender** và **Receiver** chạy qua **TCP socket**, trong đó bản tin được mã hoá bằng **DES-CBC**, có **IV**, có **header độ dài**, và có đủ chỗ để bạn luyện cả kỹ năng kỹ thuật lẫn tư duy bảo mật.
 
 Bài lab bám theo luồng hệ thống trong file hướng dẫn: Sender tạo **DES key 8 byte**, **IV 8 byte**, mã hoá bằng **DES-CBC + PKCS#7**, rồi gửi tuần tự **key + IV + length header + ciphertext**; Receiver lắng nghe socket, nhận đúng thứ tự này rồi giải mã và hiển thị lại bản rõ. Đây là mô hình học tập có chủ đích để quan sát quy trình giao tiếp, **không phải thiết kế an toàn để dùng ngoài đời thật**.
@@ -12,19 +13,17 @@ Bài lab bám theo luồng hệ thống trong file hướng dẫn: Sender tạo 
 - Khi demo, giảng viên có thể hỏi chéo bất kỳ thành viên nào về **sender**, **receiver**, **DES-CBC**, **padding**, **threat model** và **ethics**.
 
 ## Team members
-- **Thành viên 1**: Phạm Danh Thái - MSSV: 1871020523
-- **Thành viên 2**: Nguyễn Đình Trí - MSSV: 1871020580
-
+- **Thành viên 1**: Phạm Danh Thái - MSSV: 1871020214
+- **Thành viên 2**: Nguyễn Đình Trí - MSSV: 1871020191
 ## Task division
-Thành viên 1 phụ trách chính (Phạm Danh Thái): Thiết kế và cài đặt luồng Sender. Chịu trách nhiệm tạo mã hóa DES-CBC, tạo gói tin (packet structure), thực hiện gửi dữ liệu qua TCP Socket và quản lý log phía người gửi.
+- Thành viên 1 phụ trách chính: Logic mã hóa (des_socket_utils.py), chương trình gửi tin (sender.py) và phân tích rủi ro (threat-model-1page.md).
+- Thành viên 2 phụ trách chính: chương trình nhận tin (receiver.py), xây dựng kịch bản kiểm thử (tests/) và xử lý log hệ thống.
+- Phần làm chung: Cùng thực hiện chạy Demo, viết báo cáo (report-1page.md) và thực hiện Peer Review.
 
-Thành viên 2 phụ trách chính (Nguyễn Đình Trí): Thiết kế và cài đặt luồng Receiver. Chịu trách nhiệm lắng nghe kết nối, parse header độ dài, thực hiện giải mã DES-CBC, xử lý các ngoại lệ và ghi log phía người nhận.
-
-Phần làm chung: Thống nhất giao thức truyền tin (Key + IV + Length + Ciphertext), xây dựng bộ mã nguồn tiện ích des_socket_utils.py, viết các kịch bản kiểm thử (Tests), xây dựng Threat Model và hoàn thiện tài liệu báo cáo.
 ## Demo roles
-- **Bạn nào demo Sender / gói tin / log gửi**: TODO_DEMO_ROLE_1
-- **Bạn nào demo Receiver / giải mã / log nhận**: TODO_DEMO_ROLE_2
-- **Cả hai cùng trả lời threat model và ethics**: TODO_DEMO_ROLE_SHARED
+- **Bạn nào demo Sender / gói tin / log gửi**: Phạm Danh Thái
+- **Bạn nào demo Receiver / giải mã / log nhận**: Nguyễn Đình Trí
+- **Cả hai cùng trả lời threat model và ethics**: Cả 2
 
 ## Mục tiêu học tập
 - Hiểu luồng hoạt động của hệ thống Sender/Receiver qua TCP socket.
@@ -115,7 +114,6 @@ CI sẽ kiểm tra:
 - chạy được kiểm thử local sender/receiver
 - có negative test cho **tamper** và **wrong key**
 - `README.md` đã khai báo **2 thành viên**, **phân công**, **vai trò demo**
-- các file `report-1page.md`, `threat-model-1page.md`, `peer-review-response.md` không còn dòng `TODO_STUDENT`
 - thư mục `logs/` có ít nhất 1 file log thật
 
 Nếu CI đỏ, đừng hoảng. Cứ xem nó như một trợ giảng hơi khó tính nhưng vẫn muốn bạn qua môn.
