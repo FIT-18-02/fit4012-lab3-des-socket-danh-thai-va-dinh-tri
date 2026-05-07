@@ -14,7 +14,7 @@ Bài lab bám theo luồng hệ thống trong file hướng dẫn: Sender tạo 
 
 ## Team members
 - **Thành viên 1**: Phạm Danh Thái - MSSV: 1871020523
-- **Thành viên 2**: Nguyễn Đình Trí - MSSV: 1871020191
+- **Thành viên 2**: Nguyễn Đình Trí - MSSV: 1871020580
 ## Task division
 - Thành viên 1 phụ trách chính: Logic mã hóa (des_socket_utils.py), chương trình gửi tin (sender.py) và phân tích rủi ro (threat-model-1page.md).
 - Thành viên 2 phụ trách chính: chương trình nhận tin (receiver.py), xây dựng kịch bản kiểm thử (tests/) và xử lý log hệ thống.
