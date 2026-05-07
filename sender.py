@@ -3,7 +3,6 @@ import socket
 import sys
 from des_socket_utils import encrypt_des_cbc, build_packet
 
-
 # Nhom: Pham Danh Thai and Nguyen Dinh Tri
 # Lab 3 - FIT4012
 
