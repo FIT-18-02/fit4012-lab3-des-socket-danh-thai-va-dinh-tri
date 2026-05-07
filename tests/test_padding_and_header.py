@@ -5,6 +5,7 @@ def test_pad_unpad_roundtrip():
     data = b"hello DES socket"
     # Đảm bảo unpad(pad(x)) trả về đúng x ban đầu
     assert unpad(pad(data)) == data
+    
 
 def test_build_packet_contains_correct_length():
     """Kiểm tra cấu trúc gói tin (Header + Ciphertext)."""
